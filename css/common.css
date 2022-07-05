@@ -1,0 +1,29 @@
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+body{
+    /* 기본세팅 */
+    font-size: 14px;
+    font-family: 'Nanum Gothic';
+    font-weight: 400;
+    color: #222;
+    font-style: normal;
+}
+
+.inner {position: relative;
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+.inner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
